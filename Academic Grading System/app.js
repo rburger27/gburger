@@ -1,16 +1,3 @@
-function valueRange(){
-  var range = parseFloat(document.getElementById('gradeScore').value);
-  if (range > 100) {
-    alert("Number cannot be over 100")
-  }
-  else if (range < 0) {
-    return false;
-  }
-  else {
-    gradeCheck();
-  }
-  }
-
 function gradeCheck() {
 var ngrade = parseFloat(document.getElementById('gradeScore').value);
 if(ngrade > 100){
