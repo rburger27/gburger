@@ -1,0 +1,126 @@
+
+body * { 
+    font-family: Arial, sans-serif;
+    line-height: 180%; 
+    font-size: 1em;
+}
+
+background */
+body { margin:0; }
+header { margin: 1em; }
+fieldset { margin: 1em; }
+input, textarea { 
+    background-color: black; 
+    color:white;
+    padding:.3em 1em;
+    border-radius:1em;
+    font-weight:bold;
+}
+
+.headerlogo img { 
+    width:260px;
+    float:left; 
+    
+    position:relative;top:-48px;
+    
+    margin-right:50px;
+} 
+
+header div { 
+    padding-top:2em;
+    height:180px;
+    overflow:hidden;
+} 
+
+#headername { 
+    font-size:3em; 
+    white-space:nowrap;
+} 
+
+
+@media screen and (min-width: 0px) and (max-width: 860px) {
+    .searchbox { 
+        display:none; 
+        margin:0;
+    }
+}
+
+.searchbox { 
+    font-size:1.2em; 
+    float:right;
+    margin:.75em;
+}
+
+.backgroundgradient { 
+    padding: 1.5em;
+    clear:both; 
+} 
+
+    nav ul { 
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        height:100%;
+    }
+
+        nav ul li {
+            line-height:2em;
+            font-size:1.1em;
+            width:20%;           
+            height:100%;
+            float:left;
+            text-align:center;
+            margin:0;
+            border-right:1px solid gray;
+            box-sizing: border-box;
+        }
+        
+        nav ul li:hover { 
+            background-color:red;
+        }
+        
+        nav ul li:hover * { color: white; }
+        
+        nav ul li:last-of-type { 
+            border:none;
+        }
+    
+            nav ul li a { 
+                font-weight:bold;
+                text-decoration: none;
+                font-family:sans-serif;
+            } 
+            
+*/            
+            
+fieldset { 
+    background-color: #AAAAFF;
+    border-radius: 1em;
+}
+                
+}
+
+    footer .smalltext { font-size: .8em; }
+
+
+
+#welcomeimage img { width: 100%; }
+
+
+button { 
+    margin: 0 0 0 2em; 
+    font-size:1.5em; 
+    border-radius: .5em; 
+    border:2px solid gray; 
+} 
+
+#welcometext { 
+    column-count: 2; 
+    padding: 1em; 
+}
+
+#coffeeofthemonth img { padding:2em; }
+
+article img { height:130px; width:auto; } 
+
+.robot-img-container { height:150px; }

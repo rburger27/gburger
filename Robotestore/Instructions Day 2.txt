@@ -1,0 +1,22 @@
+Hands-On: Robot Store Day One
+Now that you have an understanding of jQuery, its time to put that knowledge to work. In this Hands-On exercise, you will add jQuery to the Robot Store you have added to in the previous hands-on project. Hands-On projects are completed outside of the browser, using your IDE, or editor of choice.
+
+Description
+You should leverage what you have learned about jQuery as follows:
+
+You should have the Robot Store on your computer from the previous CSS Hands-On. From this, you will need to add some functionality using jQuery to meet the requirements below.
+
+Requirements
+Highlight the active input on the Contact page to indicate to the user where they are in the form.
+Add mouse events to highlight Robots and Hardware when the user interacts with them on their respective pages.
+Remove the alert from the Hardware page, using jQuery capture that data and log it to the console.
+Use the search bar to filter the Robots list and what is displayed.
+Tip! If I start to type Butler in the search bar, the other Robots should disappear and leave behind Butler.Bot.
+Bonus Add a loading page to the site that is displayed before the user enters the store.
+Grading
+Meets all Requirements: 50% of your grade will be based on meeting the requirements.
+Timely Submission: 25% of your grade will be based on having a complete solution on time.
+Style: 25% of your grade will be based on having legible, and well-designed code.
+Be sure to save your solution, and be prepared to share it with your Instructor or Mentor during your next class, or check-in.
+
+Tip! Your Instructor or Mentor may test your program with additional inputs, so be sure to test it thoroughly with different scenarios.

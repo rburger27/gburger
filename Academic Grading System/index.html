@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <title>Simple Grading System</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to the Academic Gradeing System</h1>
+  <h3>Please fill out the information below to see the convertion from number to letter grades.</h3>
+  <div class="gradecollection">
+    Please input your Grade Score ( 0 - 100 ):<br />
+    <input type="number" id="gradeScore" min="0" max="100" maxlength="3"><br /> Your Letter Grade is:
+    <input type="text" id="letterGrade" size="25" readonly></input><br />
+    <button type="button" value="submit" onclick="gradeCheck()">Grade</button>
+  </div>
+</body>
+
+</html>
