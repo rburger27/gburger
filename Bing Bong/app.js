@@ -1,15 +1,12 @@
-
-function run(){
+function run() {
   for (var i = 1; i <= 100; i++) {
-    if ((i % 3 == 0) && (i % 5 == 0)){
+    if ((i % 3 == 0) && (i % 5 == 0)) {
       console.log("Bing Bong");
-    }
-    else if (i % 3 == 0) {
+    } else if (i % 3 == 0) {
       console.log("Bing");
-    }
-    else if (i % 5 == 0) {
+    } else if (i % 5 == 0) {
       console.log("Bong");
-    }else{
+    } else {
       console.log(i);
     }
   }
