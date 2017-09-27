@@ -58,3 +58,16 @@ function run() {
   console.log('Dad can jump ' + parents.jump + ' inches!');
   console.log('I can jump ' + children.jump + ' inches!');
 }
+/*
+function run() {
+  class Generations{
+    constructor(hairColor, eyeColor, vertical){
+      this.hairColor = HairColor;
+      this.eyeColor = EyeColor;
+      this.vertical = Vertical;
+    }
+  }
+  let grandparents = Generations('Brown', 'Blue', 24);
+  console.log(grandparents);
+}
+*/
