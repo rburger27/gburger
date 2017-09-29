@@ -1,18 +1,16 @@
 function run(){
-  n =  parseFloat(document.getElementById('amount').value) -1 ;
-  var numGen = function (n)
-{
-  if (n===1)
-  {
-    return [1, 1];
-  }
-  else
-  {
-    var s = numGen(n - 1);
-    s.push(s[s.length - 1] + s[s.length - 2]);
-    return s;
-  }
-};
-  console.log(numGen(n))
-  document.getElementById('output').innerHTML = numGen(n) + "";
+number = parseFloat(document.getElementById('amount').value)  ;
+
+function numGen(number) {
+
+	var sequence = [1, 1];
+
+	for (var i = 2; i < number; i++) {
+		sequence[i] = sequence[i-1]+ sequence[i-2];
+	}
+
+	return sequence;
+}
+console.log(numGen(number));
+document.getElementById('output').innerHTML = numGen(number) + " ";
 }
