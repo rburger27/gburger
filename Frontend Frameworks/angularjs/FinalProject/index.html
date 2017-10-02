@@ -6,15 +6,15 @@
     <title>Frontend Frameworks Angular JS Project</title>
     <link type='text/css' rel='stylesheet' href='stylesheet.css'/>
   </head>
-  <body>
+  <!-- initializing angular controller in the HTML DOC with ng-controller="name of app" -->
+  <body ng-controller="HomeController as vm">
 
-    <input type="text" [(ng-model)]="myName"></input>
-    <p>
-      {{myName}}
-    </p>
+    <input type="text" ng-Model="myName"></input>
+    <p>{{vm.myName}}</p>
 
     <!--JS Scripts -->
-    <script type="text/javascript" src="bower_components\angular\angular.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Frontend Frameworks\angularjs\FinalProject\bower_components\angular\angular.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="app.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Frontend Frameworks\angularjs\FinalProject\HomeController.js" charset="utf-8"></script>
   </body>
 </html>
