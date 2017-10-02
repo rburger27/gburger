@@ -43,7 +43,7 @@
     }
   });
 
-  $('#prev').on('click', function (e) {
+  $('#Back').on('click', function (e) {
     e.preventDefault();
 
     if(quiz.is(':animated')) {
@@ -120,17 +120,17 @@
         }
 
         if(qCounter === 1){
-          $('#prev').show();
+          $('#Back').show();
         } else if(qCounter === 0){
 
-          $('#prev').hide();
+          $('#Back').hide();
           $('#next').show();
         }
       }else {
         var scoreElem = displayScore();
         quiz.append(scoreElem).fadeIn();
         $('#next').hide();
-        $('#prev').hide();
+        $('#Back').hide();
         $('#start').show();
       }
     });
