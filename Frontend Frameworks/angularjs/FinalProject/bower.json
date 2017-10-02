@@ -9,7 +9,6 @@
   "license": "MIT",
   "dependencies": {
     "angular": "^1.6.6",
-    "angular-ui-router": "^1.0.7",
-    "angular-route": "^1.6.6"
+    "angular-ui-router": "^1.0.7"
   }
 }
