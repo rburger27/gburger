@@ -21,7 +21,7 @@
     correctAnswer: 4
   }];
 
-  var questionCounter = 0;
+  var qCounter = 0;
   var selections = [];
   var quiz = $('#quiz');
 
@@ -35,10 +35,10 @@
     }
     choose();
 
-    if (isNaN(selections[questionCounter])) {
+    if (isNaN(selections[qCounter])) {
       alert('Please make a selection!');
     } else {
-      questionCounter++;
+      qCounter++;
       displayNext();
     }
   });
@@ -50,7 +50,7 @@
       return false;
     }
     choose();
-    questionCounter--;
+    qCounter--;
     displayNext();
   });
 
@@ -60,7 +60,7 @@
     if(quiz.is(':animated')) {
       return false;
     }
-    questionCounter = 0;
+    qCounter = 0;
     selections = [];
     displayNext();
     $('#start').hide();
@@ -105,23 +105,23 @@
   }
 
   function choose() {
-    selections[questionCounter] = +$('input[name="answer"]:checked').val();
+    selections[qCounter] = +$('input[name="answer"]:checked').val();
   }
 
   function displayNext() {
     quiz.fadeOut(function() {
       $('#question').remove();
 
-      if(questionCounter < questions.length){
-        var nextQuestion = createQuestionElement(questionCounter);
+      if(qCounter < questions.length){
+        var nextQuestion = createQuestionElement(qCounter);
         quiz.append(nextQuestion).fadeIn();
-        if (!(isNaN(selections[questionCounter]))) {
-          $('input[value='+selections[questionCounter]+']').prop('checked', true);
+        if (!(isNaN(selections[qCounter]))) {
+          $('input[value='+selections[qCounter]+']').prop('checked', true);
         }
 
-        if(questionCounter === 1){
+        if(qCounter === 1){
           $('#prev').show();
-        } else if(questionCounter === 0){
+        } else if(qCounter === 0){
 
           $('#prev').hide();
           $('#next').show();
